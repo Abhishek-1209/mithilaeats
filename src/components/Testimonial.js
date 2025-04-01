@@ -6,17 +6,17 @@ const testimonials = [
   {
     name: "Aditya Tiwari",
     text: "Absolutely loved the taste! The best Makhana I’ve ever had.",
-    image: "/mithilaeats/assets/customer1.jpg", // Absolute path for GitHub Pages
+    image: process.env.PUBLIC_URL + "/assets/customer1.jpg", // Corrected image path
   },
   {
     name: "Chetu",
     text: "Super fresh and crunchy. Perfect for a healthy snack!",
-    image: "/mithilaeats/assets/customer2.jpg", // Absolute path for GitHub Pages
+    image: process.env.PUBLIC_URL + "/assets/customer2.jpg", // Corrected image path
   },
   {
     name: "Abhishek Dalmil",
     text: "Premium quality and great packaging. Highly recommended!",
-    image: "/mithilaeats/assets/customer3.jpg", // Absolute path for GitHub Pages
+    image: process.env.PUBLIC_URL + "/assets/customer3.jpg", // Corrected image path
   },
 ];
 
@@ -30,7 +30,7 @@ const Testimonial = () => {
             <FaQuoteLeft className="quote-icon" />
             <p className="testimonial-text">"{item.text}"</p>
             <div className="customer">
-              <img src={item.image} alt={item.name} /> {/* Corrected src */}
+              <img src={item.image} alt={item.name} />
               <h4>{item.name}</h4>
             </div>
           </div>
