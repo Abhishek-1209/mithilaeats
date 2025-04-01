@@ -6,17 +6,17 @@ const testimonials = [
   {
     name: "Aditya Tiwari",
     text: "Absolutely loved the taste! The best Makhana I’ve ever had.",
-    image: "/BiharBites/assets/customer1.jpg", // Absolute path for GitHub Pages
+    image: "/mithilaeats/assets/customer1.jpg", // Absolute path for GitHub Pages
   },
   {
     name: "Chetu",
     text: "Super fresh and crunchy. Perfect for a healthy snack!",
-    image: "/BiharBites/assets/customer2.jpg", // Absolute path for GitHub Pages
+    image: "/mithilaeats/assets/customer2.jpg", // Absolute path for GitHub Pages
   },
   {
     name: "Abhishek Dalmil",
     text: "Premium quality and great packaging. Highly recommended!",
-    image: "/BiharBites/assets/customer3.jpg", // Absolute path for GitHub Pages
+    image: "/mithilaeats/assets/customer3.jpg", // Absolute path for GitHub Pages
   },
 ];
 
