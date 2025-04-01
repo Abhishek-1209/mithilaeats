@@ -11,8 +11,8 @@ const Navbar = () => {
     <nav className="navbar">
       {/* Logo Section */}
       <div className="logo-container">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPYNBMu8gEmlbEhT-hyzrTjKIyTbEPc9PrOA&s" alt="BiharBites Logo" className="logo" />
-        <h1>BiharBites</h1>
+        <img src="logo.png" alt="Mithilaeats" className="logo" />
+        <h1>MithilaEats</h1>
       </div>
 
       {/* Navigation Links */}

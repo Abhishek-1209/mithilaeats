@@ -36,7 +36,7 @@ const ContactUs = () => {
           <div className="card p-4 shadow text-center">
             <h4 className="mb-3">Our Contact Details</h4>
             <ul className="list-unstyled">
-              <li><strong>Email:</strong> biharbites@gmail.com</li>
+              <li><strong>Email:</strong> mithilaeats@gmail.com</li>
               <li><strong>Phone:</strong> +91 8676860092</li>
               <li><strong>Address:</strong> Darbhanga, Bihar, India</li>
               <li><strong>Working Hours:</strong> Mon - Sat, 9 AM - 6 PM</li>

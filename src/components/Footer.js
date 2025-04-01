@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <h3>BiharBites</h3>
+        <h3>MithilaEats</h3>
         <p>Authentic & Fresh Makhana from Bihar</p>
         <ul className="social-links">
           <li>
@@ -32,7 +32,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} BiharBites | All Rights Reserved</p>
+        <p>&copy; {new Date().getFullYear()} MithilaEats | All Rights Reserved</p>
       </div>
     </footer>
   );
