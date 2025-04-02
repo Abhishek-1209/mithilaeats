@@ -10,12 +10,12 @@ const Footer = () => {
         <p>Authentic & Fresh Makhana from Bihar</p>
         <ul className="social-links">
           <li>
-            <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/profile.php?id=61574971977224" target="_blank" rel="noopener noreferrer">
               <FaFacebookF />
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/anand.abhishek.12/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/mithilaeats_/" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
           </li>

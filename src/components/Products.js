@@ -26,7 +26,7 @@ const products = [
 ];
 
 const Products = () => {
-  const { addToCart } = useContext(CartContext);
+  const { cart, addToCart, increaseQuantity, removeFromCart } = useContext(CartContext);
 
   const handleAddToCart = (product) => {
     addToCart(product);
@@ -45,16 +45,29 @@ const Products = () => {
     <section className="products">
       <h2>Our Premium Makhana</h2>
       <div className="product-container">
-        {products.map((product) => (
-          <div className="product-card" key={product.id}>
-            <img src={product.image} alt={product.name} className="product-img" />
-            <h3>{product.name}</h3>
-            <p className="price">₹{product.price}</p>
-            <button className="btn btn-primary" onClick={() => handleAddToCart(product)}>
-              Add to Cart
-            </button>
-          </div>
-        ))}
+        {products.map((product) => {
+          const cartItem = cart.find((item) => item.id === product.id);
+
+          return (
+            <div className="product-card" key={product.id}>
+              <img src={product.image} alt={product.name} className="product-img" />
+              <h3>{product.name}</h3>
+              <p className="price">₹{product.price}</p>
+
+              {cartItem ? (
+                <div className="quantity-controls">
+                  <button onClick={() => removeFromCart(product.id)}>-</button>
+                  <span>{cartItem.quantity}</span>
+                  <button onClick={() => increaseQuantity(product.id)}>+</button>
+                </div>
+              ) : (
+                <button className="btn btn-primary" onClick={() => handleAddToCart(product)}>
+                  Add to Cart
+                </button>
+              )}
+            </div>
+          );
+        })}
       </div>
       {/* Toast Container (Placed at Root Level) */}
       <ToastContainer />
